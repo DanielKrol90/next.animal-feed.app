@@ -1,7 +1,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {images} from "../constants";
+
+import { images } from "../constants";
 
 const Navbar = () => {
     
