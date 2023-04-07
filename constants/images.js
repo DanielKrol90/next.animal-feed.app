@@ -1,38 +1,40 @@
 // BASIC IMAGES
-import favicon from '../assets/favicon.png';
-import logo2 from '../assets/logo_2.png';
-import logo_new from '../assets/logo_new.png';
-import logo from '../assets/logo.png';
-import logo_white from '../assets/logo_white.png';
+import Favicon from '../public/favicon.png';
+import Logo2 from '../public/logo_2.png';
+import Logo_new from '../public/logo_new.png';
+import Logo from '../public/logo.png';
+import Logo_white from '../public/logo_white.png';
 
 //  CAROUSEL IMAGES
-import chicken_c from '../assets/carousel/chicken.jpg';
-import chicken2_c from '../assets/carousel/chicken2.jpg';
-import chicks_c from '../assets/carousel/chicks.jpg';
-import cow_c from '../assets/carousel/cow.jpg';
-import cows2_c from '../assets/carousel/cows2.jpg';
-import dog_c from '../assets/carousel/dog.jpg';
-import dogocat_c from '../assets/carousel/dogocat.jpg';
-import pigeon_c from '../assets/carousel/pigeon.jpg';
-import pigeon2_c from '../assets/carousel/pigeon2.jpg';
-import poultry_c from '../assets/carousel/poultry.jpg';
-import rabbits_c from '../assets/carousel/rabbits.jpg';
+import Chicken_c from '../carousel/chicken.jpg';
+import Chicken2_c from '../carousel/chicken2.jpg';
+import Chicks_c from '../carousel/chicks.jpg';
+import Cow_c from '../carousel/cow.jpg';
+import Cows2_c from '../carousel/cows2.jpg';
+import Dog_c from '../carousel/dog.jpg';
+import Dogocat_c from '../carousel/dogocat.jpg';
+import Pigeon_c from '../carousel/pigeon.jpg';
+import Pigeon2_c from '../carousel/pigeon2.jpg';
+import Poultry_c from '../carousel/poultry.jpg';
+import Rabbits_c from '../carousel/rabbits.jpg';
 
 //  GALLERY IMAGES
-import cat_g from '../assets/gallery/cat.jpg';
-import chicken_g from '../assets/gallery/chicken.jpg';
-import cow1_g from '../assets/gallery/cow1.jpg';
-import cow2_g from '../assets/gallery/cow2.jpg';
-import dog_g from '../assets/gallery/dog.jpg';
-import horse_g from '../assets/gallery/horse.jpg';
-import parrot_g from '../assets/gallery/parrot.jpg';
-import pigeon_g from '../assets/gallery/pigeon.jpg';
-import pigs_g from '../assets/gallery/pigs.jpg';
-import rabbit_g from '../assets/gallery/rabbit.jpg';
+import Cat_g from '../gallery/cat.jpg';
+import Chicken_g from '../gallery/chicken.jpg';
+import Cow1_g from '../gallery/cow1.jpg';
+import Cow2_g from '../gallery/cow2.jpg';
+import Dog_g from '../gallery/dog.jpg';
+import Horse_g from '../gallery/horse.jpg';
+import Parrot_g from '../gallery/parrot.jpg';
+import Pigeon_g from '../gallery/pigeon.jpg';
+import Pigs_g from '../gallery/pigs.jpg';
+import Rabbit_g from '../gallery/rabit.jpg';
 
 
-export default {
-    favicon, logo2, logo_new, logo, logo_white,
-    chicken_c, chicken2_c, chicks_c, cow_c, cows2_c, dog_c, dogocat_c, pigeon_c, pigeon2_c, poultry_c, rabbits_c,
-    cat_g, chicken_g, cow1_g, cow2_g, dog_g, horse_g, parrot_g, pigeon_g, pigs_g, rabbit_g
+// eslint-disable-next-line import/no-anonymous-default-export
+export {
+  Favicon, Logo2, Logo_new, Logo, Logo_white,
+  Chicken_c, Chicken2_c, Chicks_c, Cow_c, Cows2_c, Dog_c, Dogocat_c, Pigeon_c, Pigeon2_c, Poultry_c, Rabbits_c,
+  Cat_g, Chicken_g, Cow1_g, Cow2_g, Dog_g, Horse_g, Parrot_g, Pigeon_g, Pigs_g, Rabbit_g,
 }
+

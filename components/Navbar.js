@@ -1,14 +1,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Images } from "../constants";
+import {images} from "../constants";
 
 const Navbar = () => {
     
   return (
     <div>
       <div>
-        <Image src
+      <Image src={images.Logo2} alt="logo" width={600} height={60} />
       </div>
       <div>
         <ul>
@@ -16,16 +16,16 @@ const Navbar = () => {
             <Link href="/">Strona Główna</Link>
           </li>
           <li>
-            <Link href="/o_firmie">O Firmie</Link>
+            <Link href="/O_firmie">O Firmie</Link>
           </li>
           <li>
-            <Link href="/aktualnosci">Aktualności</Link>
+            <Link href="/Aktualnosci">Aktualności</Link>
           </li>
           <li>
-            <Link href="/oferta">Oferta</Link>
+            <Link href="/Oferta">Oferta</Link>
           </li>
           <li>
-            <Link href="/kontakt">Kontakt</Link>
+            <Link href="/Kontakt">Kontakt</Link>
           </li>
         </ul>
       </div>

@@ -1,4 +1,4 @@
-import '../styles/css/globals.css'
+import '../styles/globals.css'
 import Layout from "components/Layout";
 
 
