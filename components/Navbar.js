@@ -1,22 +1,17 @@
-import React from "react";
+
 import Link from "next/link";
+import Image from "next/image";
+import { Images } from "../constants";
 
 const Navbar = () => {
-
-    const navi = styled.ul`
-        font-size: 1.5rem;
-        text-align: center;
-        list-style: none;
-    `;
-
-
+    
   return (
     <div>
       <div>
-        <a>My Website</a>
+        <Image src
       </div>
       <div>
-        <ul className="navi">
+        <ul>
           <li>
             <Link href="/">Strona Główna</Link>
           </li>
