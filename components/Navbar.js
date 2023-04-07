@@ -1,36 +1,69 @@
-
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Image from "next/image";
 
 import { images } from "../constants";
 
 const Navbar = () => {
-    
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   return (
-    <div>
-      <div>
-      <Image src={images.Logo2} alt="logo" width={600} height={60} />
+    <header className="nav__container">
+      <div className="nav__brand">
+        <Link href="/">
+          <Image
+            src={images.Logo2}
+            alt="logo"
+          />
+        </Link>
       </div>
-      <div>
+      <nav className="nav__navbar">
         <ul>
           <li>
-            <Link href="/">Strona Główna</Link>
+            <Link
+              href="/"
+              className={currentRoute === "/" ? "active" : ""}
+            >
+              Strona Główna
+            </Link>
           </li>
           <li>
-            <Link href="/O_firmie">O Firmie</Link>
+            <Link
+              href="/o_firmie"
+              className={currentRoute === "/o_firmie" ? "active" : ""}
+            >
+              O Firmie
+            </Link>
           </li>
           <li>
-            <Link href="/Aktualnosci">Aktualności</Link>
+            <Link
+              href="/aktualnosci"
+              className={currentRoute === "/aktualnosci" ? "active" : ""}
+            >
+              Aktualności
+            </Link>
           </li>
           <li>
-            <Link href="/Oferta">Oferta</Link>
+            <Link
+              href="/oferta"
+              className={currentRoute === "/oferta" ? "active" : ""}
+            >
+              Oferta
+            </Link>
           </li>
           <li>
-            <Link href="/Kontakt">Kontakt</Link>
+            <Link
+              href="/kontakt"
+              className={currentRoute === "/kontakt" ? "active" : ""}
+            >
+            <div/>
+              Kontakt
+            </Link>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 export default Navbar;
