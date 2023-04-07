@@ -1,5 +1,24 @@
+:root {
+  --color-primary: #141414;
+  --secondary: #54595F;
+  --color-text: #7A7A7A;
+  --color-darksky: #4054B2;
+  --color-sky: #3957FF;
+  --color-lightsky: #6EC1E4;
+  --color-lightgreen: #61CE70;
+  --color-darkgreen: #23A455;
+  --color-black: #000;
+  --color-white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url("../assets/carousel/cows.jpg");
+  background-image: url("../../assets/carousel/cows.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }/*# sourceMappingURL=globals.css.map */
