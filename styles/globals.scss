@@ -7,6 +7,7 @@
     --color-lightsky: #6EC1E4;
     --color-lightgreen: #61CE70;
     --color-darkgreen: #23A455;
+    --color-lightred: #FF5E5E;
     --color-black: #000;
     --color-white: #FFF;
 }
@@ -37,8 +38,32 @@ body {
     }
 }
 
+.hidden {
+    display: none !important;
+}
+
 
 // NAVIGATION BAR
+.nav__menu-bar-toggle {
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: var(--color-lightsky);
+        border: 1px solid var(--color-lightsky);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+}
+
+.nav__menu-bar-toggle.active {
+    background-color: var(--color-lightgreen);
+}
 
 .nav__container {
     width: 100%;
@@ -48,6 +73,10 @@ body {
     font-size: 0.96rem;
     position: sticky;
     z-index: 100;
+
+    .nav__menu-bar-toggle {
+        display: none;
+        }
 
     .nav__brand {
         display: flex;
@@ -61,6 +90,7 @@ body {
             display: none;
         }
     }
+
     .nav__navbar {
         display: flex;
         justify-content: flex-start;
@@ -69,7 +99,7 @@ body {
         max-width: 1200px;
         margin: 0 auto;
         padding-bottom: 0.1rem;
-        
+        font-size: 0.9rem;
         
         .nav__menu-list {
             display: flex;
@@ -100,6 +130,7 @@ body {
                         transition: transform .3s ease-in-out;
                     }
                 }
+
                 a:hover::before {
                     transform-origin: left;
                     transform: scaleX(1);
@@ -118,7 +149,6 @@ body {
         height: 100vh;
         right: 0;
         border-radius: 20px 0 0 20px;
-        
 
         .nav__brand {
             height: 80px;
@@ -155,18 +185,28 @@ body {
                         padding: 1rem 1rem 1rem 3rem;
                         border-bottom: 1px solid var(--color-white);
                         width: 100%;
+
+                        @media (max-width: 640px) {
+                            padding-left: 0.8rem;
+                        }
                     }
                 }
             }
-        }
-    }
 
+            @media (max-width: 640px) {
+                font-size: 0.8rem;
+                padding-top: 2rem;
+                }
+            }
+        }
     @media (max-width: 640px) {
         .nav__brand {
             display: none;
         }
     }
 }
+
+
 
 
 
