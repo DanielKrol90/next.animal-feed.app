@@ -1,6 +1,7 @@
 // BASIC IMAGES
 import Favicon from '../public/favicon.png';
 import Logo2 from '../public/logo_2.png';
+import Logo2_v from '../public/logo_2_v.png';
 import Logo_new from '../public/logo_new.png';
 import Logo from '../public/logo.png';
 
@@ -33,7 +34,7 @@ import Rabbit_g from '../public/gallery/rabit.jpg';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
 
-  Favicon, Logo2, Logo_new, Logo,
+  Favicon, Logo2, Logo2_v, Logo_new, Logo,
   Chicken_c, Chicken2_c, Chicks_c, Cow_c, Cows2_c, Dog_c, Dogocat_c, Pigeon_c, Pigeon2_c, Poultry_c, Rabbits_c,
   Cat_g, Chicken_g, Cow1_g, Cow2_g, Dog_g, Horse_g, Parrot_g, Pigeon_g, Pigs_g, Rabbit_g,
 }
