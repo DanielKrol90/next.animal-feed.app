@@ -23,28 +23,28 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
 
-.active {
-    color: var(--color-lightgreen) !important;
-
-    &::before {
-        transform: none !important;
+    .active {
+        color: var(--color-lightgreen) !important;
+    
+        &::before {
+            transform: none !important;
+        }
+    
+        @media (max-width: 1024px) {
+            color: var(--color-white) !important;
+        }
     }
-
-    @media (max-width: 1024px) {
-        color: var(--color-white) !important;
+    
+    .hidden {
+        display: none !important;
     }
 }
 
-.hidden {
-    display: none !important;
-}
+
 
 
 // NAVIGATION BAR
-
-
 .nav__container {
     width: 100%;
     display: flex;
@@ -203,15 +203,7 @@ body {
     }
 }
 
-
-
-
-
-
-
-
 // FOOTER
-
 .footer {
     width: auto;
     display: block;

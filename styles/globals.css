@@ -24,20 +24,18 @@ body {
   background-size: cover;
   height: 100vh;
 }
-
-.active {
+body .active {
   color: var(--color-lightgreen) !important;
 }
-.active::before {
+body .active::before {
   transform: none !important;
 }
 @media (max-width: 1024px) {
-  .active {
+  body .active {
     color: var(--color-white) !important;
   }
 }
-
-.hidden {
+body .hidden {
   display: none !important;
 }
 
