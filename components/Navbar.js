@@ -20,17 +20,19 @@ const Navbar = () => {
 
   return (
     <header>
-      <button
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }}
-        className={`${isNavExpanded ? "nav__menu-bar-toggle active" : ""} nav__menu-bar-toggle`}
-      >
-        <RxHamburgerMenu size={20} />
-      </button>
       <nav
         className={isNavExpanded ? "nav__container hidden" : "nav__container"}
       >
+        <button
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+          className={`${
+            isNavExpanded ? "nav__menu-bar-toggle active" : ""
+          } nav__menu-bar-toggle`}
+        >
+          <RxHamburgerMenu size={20} />
+        </button>
         <div className="nav__brand">
           <Link href="/">
             <Image

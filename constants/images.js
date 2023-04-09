@@ -1,7 +1,7 @@
 // BASIC IMAGES
 import Favicon from '../public/favicon.png';
-import Logo2 from '../public/logo_2.png';
-import Logo2_v from '../public/logo_2_v.png';
+import Logo2 from '../public/logo_2.webp';
+import Logo2_v from '../public/logo_2_v.webp';
 import Logo_new from '../public/logo_new.png';
 import Logo from '../public/logo.png';
 
