@@ -22,7 +22,6 @@ body {
   background-image: url("../public/carousel/cows.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 body .active {
   color: var(--color-lightgreen) !important;
@@ -243,4 +242,16 @@ body .hidden {
 }
 .footer .footer__items-container .footer__copyrights p {
   color: var(--color-white);
+}
+
+.imageSlider__container {
+  position: relative;
+}
+.imageSlider__container .imageSlider__item {
+  height: 60vh;
+}
+.imageSlider__container .imageSlider__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=globals.css.map */

@@ -19,7 +19,6 @@ const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <header>
       <nav
         className={isNavExpanded ? "nav__container hidden" : "nav__container"}
       >
@@ -65,7 +64,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </header>
   );
 };
 export default Navbar;
