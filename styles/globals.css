@@ -246,12 +246,44 @@ body .hidden {
 
 .imageSlider__container {
   position: relative;
+  height: 60vh;
+  display: flex;
 }
 .imageSlider__container .imageSlider__item {
-  height: 60vh;
-}
-.imageSlider__container .imageSlider__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.imageSlider__container .imageSlider__leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.imageSlider__container .imageSlider__rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.imageSlider__container .imageSlider__dot-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 1000;
+  cursor: pointer;
+}
+.imageSlider__container .imageSlider__dot-container .imageSlider__dot {
+  color: var(--color-white);
+}
+.imageSlider__container .imageSlider__dot-container .imageSlider__dot.active {
+  color: var(--color-darkgreen);
 }/*# sourceMappingURL=globals.css.map */
