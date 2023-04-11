@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
      <main>
       <ImageSlider />
-      {/* <Cooperation /> */}
+      <Cooperation />
      </main>
     </>
   )
