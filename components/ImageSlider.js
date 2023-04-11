@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
@@ -15,6 +15,7 @@ const ImageSlider = () => {
     { id: 4, image: images.Pigeon2_c, title: "Pigeon" },
     { id: 5, image: images.Rabbits_c, title: "Rabbit" },
   ];
+
   const goToNext = () => {
     setCurrentIndex(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
   };
@@ -22,6 +23,13 @@ const ImageSlider = () => {
   const goToPrevious = () => {
     setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
   };
+
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setCurrentIndex(currentIndex + 1);
+  //   }, 4000);
+  //   return () => clearInterval(slider);
+  // }, [currentIndex]);
 
   return (
     <div className="imageSlider__container">
@@ -58,7 +66,6 @@ const ImageSlider = () => {
             </div>
           );
         })}
-        ;
       </div>
     </div>
   );

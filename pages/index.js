@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
 import ImageSlider from '../components/ImageSlider'
+import Cooperation from '../components/Cooperation'
+
 
 export default function Home() {
 
@@ -13,6 +15,7 @@ export default function Home() {
       </Head>
      <main>
       <ImageSlider />
+      <Cooperation />
      </main>
     </>
   )
