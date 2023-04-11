@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
@@ -7,29 +7,50 @@ import { images } from "../constants";
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const timeoutRef = useRef(null);
+  const delay = 3000;
+  
   const slides = [
     { id: 1, image: images.Poultry_c, title: "Poultry" },
     { id: 2, image: images.Cow_c, title: "Cow" },
     { id: 3, image: images.Dogocat_c, title: "Dogocat" },
     { id: 4, image: images.Pigeon2_c, title: "Pigeon" },
     { id: 5, image: images.Rabbits_c, title: "Rabbit" },
+    { id: 6, image: images.Chicks_c, title: "Chicks" },
   ];
+  const length = slides.length;
+  
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
   };
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
   };
 
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setCurrentIndex(currentIndex + 1);
-  //   }, 4000);
-  //   return () => clearInterval(slider);
-  // }, [currentIndex]);
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+      setCurrentIndex((prevIndex) =>
+          prevIndex === length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  });
+
+
 
   return (
     <div className="imageSlider__container">

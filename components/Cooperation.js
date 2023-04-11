@@ -32,7 +32,7 @@ function Cooperation() {
     <section className="review-container">
       <div className="title">
         <h2>
-          <span>/</span>reviews
+          <span>WSPÓŁPRACUJEMY Z</span>
         </h2>
       </div>
       <div className="section-center">
@@ -51,7 +51,7 @@ function Cooperation() {
           return (
             <>
               <article key={id} className={position}>
-              <Image src={image} alt={name} className="person-img" width={300} height={300}/>
+              <Image src={image} alt={name} className="person-img" width={500} height={500}/>
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>
