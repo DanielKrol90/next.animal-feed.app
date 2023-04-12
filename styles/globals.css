@@ -310,7 +310,7 @@ body {
 
 .imageSlider__container {
   position: relative;
-  height: 60vh;
+  height: 50vh;
   display: flex;
 }
 .imageSlider__container .imageSlider__item {
@@ -360,7 +360,7 @@ body {
   text-align: center;
   margin-bottom: 2rem;
   text-transform: capitalize;
-  color: var(--clr-grey-3);
+  color: var(--color-secondary);
 }
 .review-container .title h2 {
   display: flex;
@@ -370,7 +370,7 @@ body {
 }
 .review-container .title span {
   font-size: 0.85em;
-  color: var(--clr-primary-5);
+  color: var(--color-secondary);
   margin-right: 1rem;
   font-weight: 700;
 }
@@ -392,12 +392,12 @@ body {
   width: 350px;
   height: 150px;
   object-fit: scale-down;
-  border: 4px solid var(--clr-grey-8);
-  box-shadow: var(--dark-shadow);
+  border: 2px solid var(--color-secondary);
+  box-shadow: var(--color-lightblack);
 }
 .review-container article h4 {
   text-transform: uppercase;
-  color: var(--clr-primary-5);
+  color: var(--color-lightblack);
   margin-bottom: 0.25rem;
 }
 .review-container .text {
@@ -405,33 +405,33 @@ body {
   margin: 0 auto;
   margin-top: 2rem;
   line-height: 2;
-  color: var(--clr-grey-5);
+  color: var(--color-lightblack);
 }
 .review-container .icon {
   font-size: 3rem;
   margin-top: 1rem;
-  color: var(--clr-primary-5);
+  color: var(--color-lightblack);
 }
 .review-container .prev,
 .review-container .next {
   position: absolute;
   top: 200px;
   transform: translateY(-50%);
-  background: var(--clr-grey-5);
-  color: var(--clr-white);
+  background: var(--color-white);
+  color: var(--color-primary);
   width: 1.25rem;
   height: 1.25rem;
   display: grid;
   place-items: center;
   border-color: transparent;
   font-size: 1rem;
-  border-radius: var(--radius);
+  border-radius: 50%;
   cursor: pointer;
   transition: var(--transition);
 }
 .review-container .prev:hover,
 .review-container .next:hover {
-  background: var(--clr-primary-5);
+  background: var(--color-primary);
 }
 .review-container .prev {
   left: 0;
@@ -457,7 +457,6 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: var(--transition);
 }
 .review-container article.activeSlide {
   opacity: 1;
@@ -468,4 +467,8 @@ body {
 }
 .review-container article.nextSlide {
   transform: translateX(100%);
+}
+
+.bannerAbout__container {
+  background-color: var(--color-white);
 }/*# sourceMappingURL=globals.css.map */

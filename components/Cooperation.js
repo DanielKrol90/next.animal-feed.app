@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { FaQuoteRight } from "react-icons/fa";
 import data from "../constants/data";
 
 function Cooperation() {
@@ -54,7 +53,6 @@ function Cooperation() {
               <Image src={image} alt={name} className="person-img" width={500} height={500}/>
               <h4>{name}</h4>
               <p className="title">{title}</p>
-              <FaQuoteRight className="icon" />
             </article>
             </>
           

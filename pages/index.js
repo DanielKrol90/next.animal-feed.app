@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import ImageSlider from '../components/ImageSlider'
 import Cooperation from '../components/Cooperation'
+import BannerAbout from '@/components/BannerAbout'
 
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
       </Head>
      <main>
       <ImageSlider />
+      <BannerAbout />
+
+
       <Cooperation />
      </main>
     </>
