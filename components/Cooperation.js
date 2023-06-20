@@ -50,12 +50,11 @@ function Cooperation() {
           return (
             <>
               <article key={id} className={position}>
-              <Image src={image} alt={name} className="person-img" width={500} height={500}/>
-              <h4>{name}</h4>
-              <p className="title">{title}</p>
-            </article>
+                <Image src={image} alt={name} className="person-img" width={500} height={500}/>
+                <h4>{name}</h4>
+                <p className="title">{title}</p>
+              </article>
             </>
-          
           );
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>

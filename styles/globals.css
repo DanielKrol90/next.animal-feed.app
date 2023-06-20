@@ -395,11 +395,6 @@ body {
   border: 2px solid var(--color-secondary);
   box-shadow: var(--color-lightblack);
 }
-.review-container article h4 {
-  text-transform: uppercase;
-  color: var(--color-lightblack);
-  margin-bottom: 0.25rem;
-}
 .review-container .text {
   max-width: 35em;
   margin: 0 auto;
@@ -457,6 +452,11 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
+}
+.review-container article h4 {
+  text-transform: uppercase;
+  color: var(--color-lightblack);
+  margin-bottom: 0.25rem;
 }
 .review-container article.activeSlide {
   opacity: 1;

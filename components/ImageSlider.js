@@ -8,7 +8,7 @@ import { images } from "../constants";
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
-  const delay = 3000;
+  const delay = 5000;
   
   const slides = [
     { id: 1, image: images.Poultry_c, title: "Poultry" },
