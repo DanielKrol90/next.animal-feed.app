@@ -3,6 +3,7 @@ import Head from 'next/head'
 import ImageSlider from '../components/ImageSlider'
 import Cooperation from '../components/Cooperation'
 import BannerAbout from '@/components/BannerAbout'
+import Product from '@/components/Product'
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       <BannerAbout />
 
 
-      <Cooperation />
+      <Product />
      </main>
     </>
   )
